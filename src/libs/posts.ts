@@ -1,6 +1,6 @@
 import fs from 'fs'
 import html from 'remark-html'
-import matter, { GrayMatterFile } from 'gray-matter'
+import matter from 'gray-matter'
 import path from 'path'
 import remark from 'remark'
 
