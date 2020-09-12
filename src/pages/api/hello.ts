@@ -1,8 +1,5 @@
-import { ServerResponse } from 'http'
-import { Http2SecureServer } from 'http2'
+import { NextApiRequest, NextApiResponse } from 'next'
 
-import { NextApiResponse } from 'next'
-
-export default (_, res: NextApiResponse) => {
+export default (_: NextApiRequest, res: NextApiResponse) => {
   res.status(200).json({ text: 'Hello' })
 }
