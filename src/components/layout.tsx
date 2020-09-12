@@ -6,7 +6,12 @@ import Link from 'next/link'
 const name = 'Takeshi Mir'
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({ children, home }) {
+interface Type {
+  children: any[]
+  home: boolean
+}
+
+export default function Layout({ children, home }: Type) {
   return (
     <div className={styles.container}>
       <Head>
@@ -39,7 +44,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <a>
                 <img
-                  src="/images/profile.jpg"
+                  src="/images/profile.png"
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
